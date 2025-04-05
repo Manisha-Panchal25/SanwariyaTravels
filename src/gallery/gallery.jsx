@@ -3,7 +3,7 @@ import NavBar from "../navBar/navBar";
 import Footer from "../footer/footer";
 import React from 'react';
 import Masonry from 'react-masonry-css';
-import './Gallery.css';
+import './gallery.css';
 // import { FaInstagram, FaFacebook, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 // Import existing images
