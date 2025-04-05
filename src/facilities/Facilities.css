@@ -1,0 +1,232 @@
+.facilities-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.animated-heading {
+    text-align: center;
+    color: #2a3899;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 30px 0 10px;
+    word-wrap: break-word;
+}
+
+.tagline {
+    text-align: center;
+    color: #666;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    margin-bottom: 40px;
+    word-wrap: break-word;
+}
+
+.section-heading {
+    text-align: center;
+    color: #2a3899;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: 40px 0 20px;
+    position: relative;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: #F5419B;
+}
+
+/* Destinations Grid */
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.destination-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-item h3 {
+    padding: 15px;
+    text-align: center;
+    color: #2a3899;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Facilities Grid */
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.facility-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.facility-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    padding: 15px;
+    margin: 0;
+    color: #2a3899;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.facility-card p {
+    padding: 0 15px 15px;
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Trip Services Grid */
+.trip-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.trip-service-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-service-card h3 {
+    padding: 15px;
+    margin: 0;
+    color: #2a3899;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.trip-service-card p {
+    padding: 0 15px 15px;
+    margin: 0;
+    color: #666;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Hover Effects */
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+
+.zoom-effect {
+    transition: transform 0.3s ease;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .facilities-container {
+        padding: 15px;
+    }
+
+    .destinations-grid,
+    .facilities-grid,
+    .trip-services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .destination-image,
+    .facility-image,
+    .trip-service-image {
+        height: 180px;
+    }
+
+    .facility-card h3,
+    .trip-service-card h3 {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    .facility-card p,
+    .trip-service-card p {
+        font-size: 0.85em;
+        padding: 0 12px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .facilities-container {
+        padding: 10px;
+    }
+
+    .destinations-grid,
+    .facilities-grid,
+    .trip-services-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .destination-image,
+    .facility-image,
+    .trip-service-image {
+        height: 160px;
+    }
+
+    .facility-card h3,
+    .trip-service-card h3 {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .facility-card p,
+    .trip-service-card p {
+        font-size: 0.8em;
+        padding: 0 10px 10px;
+    }
+}

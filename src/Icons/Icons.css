@@ -1,0 +1,16 @@
+.icon:hover{
+   fill:#2a3899;
+}
+@media (max-width: 480px) {
+   .icon{
+      width: 25px;
+      height: 30px;
+   }
+   .other-icon{
+      width: 20px;
+      height: 20px;
+   }
+   .loc-icon{
+      width: 35px;
+   }
+}
