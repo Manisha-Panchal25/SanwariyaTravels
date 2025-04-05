@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Home/Home"; 
-import Gallery from "./Gallery/gallery";
+import Gallery from "./gallery/gallery";
 import Reviews from "./reviews/Reviews";
 import ContactUs from "./contactUs/ContactUs";
 import Facilities from "./facilities/Facilities";
